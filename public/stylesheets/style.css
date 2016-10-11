@@ -1,3 +1,14 @@
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'Quattrocento', serif;
+}
 .background-image {
   background-image: url(https://hd.unsplash.com/photo-1422157245273-e08b638b4b00);
   background-repeat: no-repeat;
@@ -16,12 +27,25 @@
   padding: 220px 0;
 }
 .section-1 .row {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   max-width: none;
   padding: 50px 0;
 }
+.section-1 .heading {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+.section-1 hr {
+  border-width: 3px;
+  border-color: #fff;
+  margin: 0 27%;
+}
+.section-1 .subheading {
+  font-size: 3rem;
+}
 .section-2 {
-  background-color: green;
+  background-color: #666;
+  color: #fff;
   margin-top: 250px;
 }
 .section-3 {
