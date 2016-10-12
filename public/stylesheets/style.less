@@ -1,3 +1,6 @@
+@background1: "https://hd.unsplash.com/photo-1422157245273-e08b638b4b00";
+@background2: "http://www.factslides.com/imgs/Dolphin2.jpg";
+
 h1 {
   font-family: 'Oswald', sans-serif;
 }
@@ -7,7 +10,7 @@ h2, h3, h4, h5, h6, p {
 }
 
 .background-image {
-    background-image: url(https://hd.unsplash.com/photo-1422157245273-e08b638b4b00);
+    background-image: url(@background1);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
@@ -20,7 +23,11 @@ h2, h3, h4, h5, h6, p {
 }
 
 .scrolled-2 .background-image {
-    background-image: url(http://www.factslides.com/imgs/Dolphin2.jpg);
+    background-image: url(@background2);
+}
+
+.background-image-2 {
+    background-image: url(@background2);
 }
 
 .section-1 {
