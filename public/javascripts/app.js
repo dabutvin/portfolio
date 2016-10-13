@@ -1,10 +1,10 @@
 window.onscroll = debounce(function() {
-    if (window.scrollY < 1050) {
+    if (window.scrollY < 700) {
         document.body.classList.remove('scrolled-2')
-    } else if (window.scrollY > 1050) {
+    } else if (window.scrollY > 700) {
         document.body.classList.add('scrolled-2')
     }
-}, 100);
+}, 10, true);
 
 function debounce(func, wait, immediate) {
     var timeout;

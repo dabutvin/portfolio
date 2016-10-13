@@ -1,5 +1,5 @@
 h1 {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Yellowtail', cursive;
 }
 h2,
 h3,
@@ -7,10 +7,10 @@ h4,
 h5,
 h6,
 p {
-  font-family: 'Quattrocento', serif;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 .background-image {
-  background-image: url("https://hd.unsplash.com/photo-1422157245273-e08b638b4b00");
+  background-image: url("/images/desk.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -22,41 +22,60 @@ p {
   z-index: -1;
 }
 .scrolled-2 .background-image {
-  background-image: url("http://www.factslides.com/imgs/Dolphin2.jpg");
+  background-image: url("https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?dpr=1&auto=format&crop=entropy&fit=crop&w=900&h=500&q=80&cs=tinysrgb");
 }
 .background-image-2 {
-  background-image: url("http://www.factslides.com/imgs/Dolphin2.jpg");
+  background-image: url("https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?dpr=1&auto=format&crop=entropy&fit=crop&w=900&h=500&q=80&cs=tinysrgb");
 }
 .section-1 {
   background-color: transparent;
   color: #fff;
-  padding: 220px 0;
+  padding: 250px 0;
 }
-.section-1 .row {
-  background-color: rgba(0, 0, 0, 0.4);
-  max-width: none;
-  padding: 50px 0;
+.section-1 h1 {
+  font-size: 4rem;
 }
-.section-1 .heading {
-  font-size: 5rem;
+.section-1 h4 {
+  display: inline-block;
+  font-size: 2rem;
+  position: relative;
   text-transform: uppercase;
 }
-.section-1 hr {
-  border-width: 3px;
-  border-color: #fff;
-  margin: 0 27%;
+.section-1 h4:before,
+.section-1 h4:after {
+  border-top: 1px solid #fff;
+  content: "";
+  margin: 0 20px;
+  position: absolute;
+  top: 50%;
+  width: 60px;
 }
-.section-1 .subheading {
-  font-size: 3rem;
+.section-1 h4:before {
+  right: 100%;
+}
+.section-1 h4:after {
+  left: 100%;
 }
 .section-2 {
-  background-color: #666;
-  color: #fff;
-  height: 1000px;
-  margin-top: 250px;
-  padding: 200px 0;
+  background: #fff;
+  color: #000;
+  padding: 50px 0;
+  height: 115vh;
+}
+.section-2 h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.section-2 p {
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 .section-3 {
-  background-color: purple;
+  background-color: #fff;
+  color: #000;
   margin-top: 250px;
+  padding: 100px;
+}
+.section-3 .row + .row {
+  margin-top: 100px;
 }
