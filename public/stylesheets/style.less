@@ -8,8 +8,12 @@ h1, {
   font-family: 'Oswald', cursive;
 }
 
-h2, h3, h4, h5, h6, p {
+h2, h3, h4, h5, h6 {
   font-family: 'Open Sans Condensed', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .background-image {
@@ -36,6 +40,15 @@ h2, h3, h4, h5, h6, p {
 
 .background-image-2 {
     background-image: url(@background2);
+}
+
+h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.9rem;
 }
 
 .section-1 {
@@ -97,11 +110,6 @@ h2, h3, h4, h5, h6, p {
     padding: 50px 0;
     height: 115vh;
 
-    h2 {
-        font-size: 3rem;
-        text-transform: uppercase;
-    }
-
     p {
         font-size: 1.4rem;
         font-weight: 500;
@@ -112,7 +120,22 @@ h2, h3, h4, h5, h6, p {
     background-color: #fff;
     color: #000;
     margin-top: 250px;
-    padding: 100px;
+    padding: 100px 0;
+
+    .row + .row {
+        margin-top: 100px;
+    }
+}
+
+.section-4 {
+    background-color: #fff;
+    color: #000;
+    margin-top: 250px;
+    padding: 100px 0;
+
+    h3 {
+        margin-top: -20px;
+    }
 
     .row + .row {
         margin-top: 100px;

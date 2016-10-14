@@ -5,9 +5,11 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
   font-family: 'Open Sans Condensed', sans-serif;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
 }
 .background-image {
   background-image: url("/images/desk.png");
@@ -32,6 +34,13 @@ p {
 }
 .background-image-2 {
   background-image: url("https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?dpr=1&auto=format&crop=entropy&fit=crop&w=900&h=500&q=80&cs=tinysrgb");
+}
+h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 1.9rem;
 }
 .section-1 {
   background-color: transparent;
@@ -91,10 +100,6 @@ p {
   padding: 50px 0;
   height: 115vh;
 }
-.section-2 h2 {
-  font-size: 3rem;
-  text-transform: uppercase;
-}
 .section-2 p {
   font-size: 1.4rem;
   font-weight: 500;
@@ -103,9 +108,21 @@ p {
   background-color: #fff;
   color: #000;
   margin-top: 250px;
-  padding: 100px;
+  padding: 100px 0;
 }
 .section-3 .row + .row {
+  margin-top: 100px;
+}
+.section-4 {
+  background-color: #fff;
+  color: #000;
+  margin-top: 250px;
+  padding: 100px 0;
+}
+.section-4 h3 {
+  margin-top: -20px;
+}
+.section-4 .row + .row {
   margin-top: 100px;
 }
 .column {
