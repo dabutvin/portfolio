@@ -162,20 +162,15 @@ p {
 .card {
     @cardspacing: 10px;
 
-    padding: @cardspacing;
-    position: relative;
-
-    img {
-        margin: -@cardspacing -@cardspacing 0 -@cardspacing;
-    }
-
     h3 {
+        background-image: url(/images/globe.png);
+        background-size: cover;
         color: #fff;
-        position: absolute;
-        top: 35px;
+        padding: 40px 0 2px @cardspacing;
     }
 
     p {
-        margin-top: @cardspacing;
+        margin: @cardspacing 0 40px;
+        padding-left: @cardspacing;
     }
 }
