@@ -12,7 +12,8 @@ p {
   font-family: 'Muli', sans-serif;
 }
 h1,
-h2 {
+h2,
+h3 {
   text-transform: uppercase;
 }
 h1 {
@@ -27,7 +28,7 @@ h2 {
   font-size: 3rem;
 }
 h3 {
-  font-size: 1.9rem;
+  font-size: 1.5rem;
 }
 h4 {
   font-size: 2rem;
@@ -39,6 +40,10 @@ h4 {
 }
 p {
   font-size: 1.1rem;
+}
+.column {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
 }
 @media only screen and (min-width: 780px) {
   .background-image {
@@ -136,7 +141,18 @@ p {
 .section-4 .row + .row {
   margin-top: 100px;
 }
-.column {
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
+.card {
+  padding: 10px;
+  position: relative;
+}
+.card img {
+  margin: -10px -10px 0 -10px;
+}
+.card h3 {
+  color: #fff;
+  position: absolute;
+  top: 35px;
+}
+.card p {
+  margin-top: 10px;
 }

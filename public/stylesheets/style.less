@@ -16,7 +16,7 @@ p {
   font-family: 'Muli', sans-serif;
 }
 
-h1, h2 {
+h1, h2, h3 {
     text-transform: uppercase;
 }
 
@@ -33,7 +33,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
 }
 
 h4 {
@@ -46,6 +46,11 @@ h4 {
 
 p {
     font-size: 1.1rem;
+}
+
+.column {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
 }
 
 .background-image {
@@ -154,7 +159,23 @@ p {
     }
 }
 
-.column {
-    padding-left: 1.2rem;
-    padding-right: 1.2rem;
+.card {
+    @cardspacing: 10px;
+
+    padding: @cardspacing;
+    position: relative;
+
+    img {
+        margin: -@cardspacing -@cardspacing 0 -@cardspacing;
+    }
+
+    h3 {
+        color: #fff;
+        position: absolute;
+        top: 35px;
+    }
+
+    p {
+        margin-top: @cardspacing;
+    }
 }
