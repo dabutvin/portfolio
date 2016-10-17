@@ -2,8 +2,9 @@
 @background2: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?dpr=1&auto=format&crop=entropy&fit=crop&w=900&h=500&q=80&cs=tinysrgb";
 @background3: "https://hd.unsplash.com/photo-1422157245273-e08b638b4b00";
 
-@small: 765px;
+@small: 640px;
 @medium: 1024px;
+@large: 1200px;
 
 h1, {
   font-family: 'Oswald', cursive;
@@ -144,10 +145,14 @@ p {
     }
 
     img {
-        margin-right: 20px;
+        margin-right: 10px;
         float: right;
 
         @media only screen and (min-width : @medium) {
+            margin-right: 20px;
+        }
+
+        @media only screen and (min-width : @large) {
             margin-right: 40px;
         }
 
