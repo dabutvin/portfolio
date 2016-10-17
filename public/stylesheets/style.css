@@ -110,33 +110,30 @@ p {
     padding: 250px 0;
   }
 }
-.section-2 {
+.section-about-me {
   background: #fff;
   color: #000;
   padding: 50px 0;
 }
 @media only screen and (min-width: 780px) {
-  .section-2 {
+  .section-about-me {
     min-height: 115vh;
   }
 }
-.section-3 {
+.section-skills {
   background-color: #fff;
   color: #000;
   margin-top: 250px;
   padding: 100px 0;
 }
-.section-4 {
+.section-projects {
   background-color: #fff;
   color: #000;
   margin-top: 250px;
   padding: 100px 0;
 }
-.section-4 h3 {
+.section-projects h3 {
   margin-top: -20px;
-}
-.section-4 .row + .row {
-  margin-top: 100px;
 }
 .card h3 {
   background-size: cover;
