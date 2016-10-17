@@ -11,6 +11,8 @@ window.setTimeout(function() {
 
 window.onscroll = debounce(runScroll, 10, true);
 
+document.addEventListener('touchmove', debounce(runScroll, 10, true));
+
 function runScroll() {
     if(window.scrollY > navOffsetTop) {
         document.body.classList.add('nav-scrolled');
