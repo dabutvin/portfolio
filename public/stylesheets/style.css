@@ -126,9 +126,6 @@ p {
   margin-top: 250px;
   padding: 100px 0;
 }
-.section-3 .row + .row {
-  margin-top: 100px;
-}
 .section-4 {
   background-color: #fff;
   color: #000;
@@ -142,7 +139,6 @@ p {
   margin-top: 100px;
 }
 .card h3 {
-  background-image: url(/images/globe.png);
   background-size: cover;
   color: #fff;
   padding: 40px 0 2px 10px;
@@ -150,4 +146,22 @@ p {
 .card p {
   margin: 10px 0 40px;
   padding-left: 10px;
+}
+.card.card-1 h3 {
+  background-image: url(/images/users.png);
+}
+.card.card-2 h3 {
+  background-image: url(/images/evaluating.png);
+}
+.card.card-3 h3 {
+  background-image: url(/images/communicating.png);
+}
+.card.card-4 h3 {
+  background-image: url(/images/globe.png);
+}
+.card.card-5 h3 {
+  background-image: url(/images/gaps.png);
+}
+.card.card-6 h3 {
+  background-image: url(/images/laptop.png);
 }

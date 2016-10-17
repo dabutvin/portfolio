@@ -138,10 +138,6 @@ p {
     color: #000;
     margin-top: 250px;
     padding: 100px 0;
-
-    .row + .row {
-        margin-top: 100px;
-    }
 }
 
 .section-4 {
@@ -163,7 +159,6 @@ p {
     @cardspacing: 10px;
 
     h3 {
-        background-image: url(/images/globe.png);
         background-size: cover;
         color: #fff;
         padding: 40px 0 2px @cardspacing;
@@ -172,5 +167,41 @@ p {
     p {
         margin: @cardspacing 0 40px;
         padding-left: @cardspacing;
+    }
+
+    &.card-1 {
+        h3 {
+            background-image: url(/images/users.png);
+        }
+    }
+
+    &.card-2 {
+        h3 {
+            background-image: url(/images/evaluating.png);
+        }
+    }
+
+    &.card-3 {
+        h3 {
+            background-image: url(/images/communicating.png);
+        }
+    }
+
+    &.card-4 {
+        h3 {
+            background-image: url(/images/globe.png);
+        }
+    }
+
+    &.card-5 {
+        h3 {
+            background-image: url(/images/gaps.png);
+        }
+    }
+
+    &.card-6 {
+        h3 {
+            background-image: url(/images/laptop.png);
+        }
     }
 }
