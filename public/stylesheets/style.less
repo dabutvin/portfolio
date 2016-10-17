@@ -2,7 +2,8 @@
 @background2: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?dpr=1&auto=format&crop=entropy&fit=crop&w=900&h=500&q=80&cs=tinysrgb";
 @background3: "https://hd.unsplash.com/photo-1422157245273-e08b638b4b00";
 
-@small: 780px;
+@small: 765px;
+@medium: 1024px;
 
 h1, {
   font-family: 'Oswald', cursive;
@@ -120,6 +121,43 @@ p {
     @media only screen and (min-width : @small) {
         background: transparent;
         padding: 250px 0;
+    }
+}
+
+.section-nav {
+    background-color: #3c3c3c;
+    padding: 15px 0;
+    text-align: center;
+
+    h3 {
+        margin: 0;
+
+        a {
+            color: #fff;
+            transition: all 0.2s ease;
+
+            &:hover {
+                color: #eb8174;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    img {
+        margin-right: 20px;
+        float: right;
+
+        @media only screen and (min-width : @medium) {
+            margin-right: 40px;
+        }
+
+        &:first-child {
+            margin-right: 0;
+        }
+    }
+
+    @media only screen and (min-width : @small) {
+        text-align: left;
     }
 }
 
