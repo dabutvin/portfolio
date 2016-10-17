@@ -125,10 +125,14 @@ p {
     }
 }
 
-.section-nav {
+nav {
     background-color: #3c3c3c;
     padding: 15px 0;
+    position: static;
     text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
 
     h3 {
         margin: 0;
@@ -166,10 +170,27 @@ p {
     }
 }
 
+.nav-scrolled {
+    nav {
+        position: fixed;
+    }
+}
+
+.anchorstop {
+    &:before {
+        content: " ";
+        display: block;
+        height: 66px;
+        margin-top: -66px;
+        visibility: hidden;
+    }
+}
+
 .section-about-me {
     background: #fff;
     color: #000;
-    padding: 50px 0;
+    overflow: hidden;
+    padding: 20px 0;
 
     @media only screen and (min-width : @small) {
         min-height: 115vh;

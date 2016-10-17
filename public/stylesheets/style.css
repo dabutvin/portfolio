@@ -110,48 +110,63 @@ p {
     padding: 250px 0;
   }
 }
-.section-nav {
+nav {
   background-color: #3c3c3c;
   padding: 15px 0;
+  position: static;
   text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
 }
-.section-nav h3 {
+nav h3 {
   margin: 0;
 }
-.section-nav h3 a {
+nav h3 a {
   color: #fff;
   transition: all 0.2s ease;
 }
-.section-nav h3 a:hover {
+nav h3 a:hover {
   color: #eb8174;
   text-decoration: underline;
 }
-.section-nav img {
+nav img {
   margin-right: 10px;
   float: right;
 }
 @media only screen and (min-width: 1024px) {
-  .section-nav img {
+  nav img {
     margin-right: 20px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .section-nav img {
+  nav img {
     margin-right: 40px;
   }
 }
-.section-nav img:first-child {
+nav img:first-child {
   margin-right: 0;
 }
 @media only screen and (min-width: 640px) {
-  .section-nav {
+  nav {
     text-align: left;
   }
+}
+.nav-scrolled nav {
+  position: fixed;
+}
+.anchorstop:before {
+  content: " ";
+  display: block;
+  height: 66px;
+  margin-top: -66px;
+  visibility: hidden;
 }
 .section-about-me {
   background: #fff;
   color: #000;
-  padding: 50px 0;
+  overflow: hidden;
+  padding: 20px 0;
 }
 @media only screen and (min-width: 640px) {
   .section-about-me {

@@ -1,10 +1,29 @@
-window.onscroll = debounce(function() {
+var nav = document.getElementsByTagName('nav')[0],
+    navSection = document.getElementsByClassName('section-nav')[0]
+    navHeight = nav.offsetHeight,
+    navOffsetTop = 99999;
+
+window.setTimeout(function() {
+    navSection.style.height = navHeight + 'px';
+    navOffsetTop = nav.offsetTop;
+    runScroll();
+}, 300);
+
+window.onscroll = debounce(runScroll, 10, true);
+
+function runScroll() {
+    if(window.scrollY > navOffsetTop) {
+        document.body.classList.add('nav-scrolled');
+    } else {
+       document.body.classList.remove('nav-scrolled');
+    }
+
     if (window.scrollY < 700) {
         document.body.classList.remove('scrolled-2')
     } else if (window.scrollY > 700) {
         document.body.classList.add('scrolled-2')
     }
-}, 10, true);
+}
 
 function debounce(func, wait, immediate) {
     var timeout;
