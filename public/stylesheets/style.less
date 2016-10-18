@@ -1,6 +1,4 @@
 @background1: "/images/desk.png";
-@background2: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?dpr=1&auto=format&crop=entropy&fit=crop&w=900&h=500&q=80&cs=tinysrgb";
-@background3: "https://hd.unsplash.com/photo-1422157245273-e08b638b4b00";
 
 @small: 640px;
 @medium: 1024px;
@@ -43,11 +41,24 @@ h4 {
 
     @media only screen and (min-width : @small) {
         font-size: 2.5rem;
+        line-height: 1;
     }
 }
 
 p {
     font-size: 1.1rem;
+}
+
+ul {
+    margin-top: -10px;
+}
+
+hr {
+    border-width: 2px;
+}
+
+table tbody {
+    border: 0;
 }
 
 .column {
@@ -67,18 +78,6 @@ p {
         right: 0;
         top: 0;
         z-index: -1;
-    }
-}
-
-.scrolled-2 .background-image {
-    @media only screen and (min-width : @small) {
-        background-image: url(@background2);
-    }
-}
-
-.background-image-2 {
-    @media only screen and (min-width : @small) {
-        background-image: url(@background2);
     }
 }
 
@@ -149,7 +148,8 @@ nav {
         }
     }
 
-    img {
+    .social {
+        display: inline-block;
         margin-right: 10px;
         float: right;
 
@@ -192,27 +192,27 @@ nav {
     color: #000;
     overflow: hidden;
     padding: 20px 0;
-
-    @media only screen and (min-width : @small) {
-        min-height: 115vh;
-    }
 }
 
 .section-skills {
     background-color: #fff;
     color: #000;
-    margin-top: 250px;
-    padding: 100px 0;
 }
 
 .section-projects {
     background-color: #fff;
     color: #000;
-    margin-top: 250px;
-    padding: 100px 0;
 
     h3 {
         margin-top: -10px;
+    }
+
+    .row + .row {
+        margin-top: 40px;
+
+        @media only screen and (min-width : @small) {
+            margin-top: 20px;
+        }
     }
 }
 

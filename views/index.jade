@@ -18,9 +18,12 @@ block content
                 h3
                     a(href='#projects') Projects
             div.column.medium-3.show-for-medium
-                img(alt='', width='33' src='https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/linkedin-512.png')
-                img(alt='', width='33', src='http://icons.iconarchive.com/icons/limav/flat-gradient-social/256/Twitter-icon.png')
-                img(alt='', width='33', src='http://icons.iconarchive.com/icons/igh0zt/ios7-style-metro-ui/512/MetroUI-Other-Mail-icon.png')
+                a.social(href='https://www.linkedin.com/in/elise-livingston-6766a948')
+                    img(alt='', width='33' src='https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/linkedin-512.png')
+                a.social(href='https://twitter.com/Elivingston3')
+                    img(alt='', width='33', src='http://icons.iconarchive.com/icons/limav/flat-gradient-social/256/Twitter-icon.png')
+                a.social(href='mailto:elise.livingston@gmail.com')
+                    img(alt='', width='33', src='http://icons.iconarchive.com/icons/igh0zt/ios7-style-metro-ui/512/MetroUI-Other-Mail-icon.png')
   section.section.section-about-me
     div.row.column
         h2.anchorstop#about-me About me
@@ -29,8 +32,25 @@ block content
             p I am a forward-thinking UX designer and researcher with a strong background in interaction design, qualitative research, computer science, and project management. I have a passion for technology, and for building meaningful and innovative products that improve the ways that we work, learn, and live.
             p I currently work at Microsoft where I design and build experiences that are shared across the Microsoft Office suite. My current focus is inclusive design and accessibility. I am passionate about making Microsoft Office fully accessible, giving people living with disability more opportunity to thrive at school and work by giving them access to the world's most powerful productivity software. I collaborate across many teams to implement new accessibility features, and I act as an advocate to bring an accessibility-first culture to my team.
             p I am also working on my Master's degree in Human Centered Design & Engineering at the University of Washington. Combining my experiences from academic research and industry design, I am able to bring a unique perspective to each group that I work with, bringing to light new opportunities for innovation and collaboration.
-        div.column.large-3
-            img(alt='', src='https://media.licdn.com/media/AAEAAQAAAAAAAAJPAAAAJGQzYWYzNDJmLTM0NGItNDY0MC1iYjY5LTM0YTE3M2NkNTg3Mw.jpg')
+        div.column.large-3.text-center
+            div.row.column
+                img(alt='', src='https://media.licdn.com/media/AAEAAQAAAAAAAAJPAAAAJGQzYWYzNDJmLTM0NGItNDY0MC1iYjY5LTM0YTE3M2NkNTg3Mw.jpg')
+            div.row.column(style='margin-top: 20px;')
+                table
+                    tr
+                        td
+                            a.social(href='mailto:elise.livingston@gmail.com')
+                                img(alt='', width='33', src='http://icons.iconarchive.com/icons/igh0zt/ios7-style-metro-ui/512/MetroUI-Other-Mail-icon.png')
+                        td
+                            a.social(href='https://www.linkedin.com/in/elise-livingston-6766a948')
+                                img(alt='', width='33' src='https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/linkedin-512.png')
+                        td
+                            a.social(href='https://twitter.com/Elivingston3')
+                                img(alt='', width='33', src='http://icons.iconarchive.com/icons/limav/flat-gradient-social/256/Twitter-icon.png')
+            div.row.column
+                a.button(href='/resume.pdf') Resume
+    div.row.column
+        hr
   section.section.section-skills
     div.row.column
         h2.anchorstop#skills Skills
@@ -60,6 +80,8 @@ block content
             div.card.card-6
                 h3 UX Design
                 p UX is crucial to the success of any product. I have experience creating mock-ups and user flows that make sense. When I design, I believe in both usability and delight.
+    div.row.column
+        hr
   section.section.section-projects
     div.row.column
         h2.anchorstop#projects Projects
@@ -68,44 +90,41 @@ block content
             h4 Office Remote for Android
             h3 UX Designer
             p Office Remote makes giving presentations easier by providing the presenter with a mobile remote control for Microsoft Office. Originally a Windows Phone app, Office Remote was expanded to the Android platform in 2015. Data collected from the original app showed that only 30% of users were able to successfully set up the app using the provided instructions. My job was to adapt the Windows Phone design to the Android platform, and to redesign the app first run experience to increase success rate of app set up. I worked closely with software engineers on the team to implement the designs. With the redesign, successful setup increased from 30% to over 80%.
-            p
-                a(href='http://www.pcworld.com/article/2909056/microsoft-office-remote-comes-to-android-lets-you-control-presentations-from-your-phone.html') PCWorld
-                | ,
-                a(href='http://thenextweb.com/apps/2015/04/10/microsofts-new-app-lets-you-control-powerpoint-presentations-with-your-android-device/') TNW
-                | .
+                a(href='http://www.pcworld.com/article/2909056/microsoft-office-remote-comes-to-android-lets-you-control-presentations-from-your-phone.html')  PCWorld
+                |  |
+                a(href='http://thenextweb.com/apps/2015/04/10/microsofts-new-app-lets-you-control-powerpoint-presentations-with-your-android-device/')  TNW
         div.column.large-3.text-center
-            img(alt='', src='/images/office-remote.png')
+            img(alt='', src='/images/office-remote.png', style='width: 60%;')
     div.row
-        div.column.large-3
-            img(alt='', src='https://placekitten.com/400/400')
-        div.column.large-9
-            h2 EarSketch
+        div.column.large-9.large-push-3
+            h4 EarSketch
             h3 Curriculum Designer, Qualitative Researcher
-            p EarSketch is an influential computer science education tool aiming to encourage young students to get more excited about programming by teaching introductory computer science concepts through music remixing. EarSketch aims to help increase diversity in the technology industry by letting students express themselves creatively with music. In the three years I worked on this project, I served as primary curriculum designer and qualitative researcher. During my final year with the team, I designed and moderated a series of focus groups with high school students to understand the effectiveness of EarSketch as a motivator for students to continue studying computer science. Qualitative findings from this study support our hypothesis that creativity plays an important role in engagement in computer science education.
-            p Visit the project:
-                a(href='http://earsketch.gatech.edu/') http://earsketch.gatech.edu/
+            p
+                a(href='http://earsketch.gatech.edu/') EarSketch
+                |  is an influential computer science education tool aiming to encourage young students to get more excited about programming by teaching introductory computer science concepts through music remixing. EarSketch aims to help increase diversity in the technology industry by letting students express themselves creatively with music. In the three years I worked on this project, I served as primary curriculum designer and qualitative researcher. During my final year with the team, I designed and moderated a series of focus groups with high school students to understand the effectiveness of EarSketch as a motivator for students to continue studying computer science. Qualitative findings from this study support our hypothesis that creativity plays an important role in engagement in computer science education.
             p Check out publications of our work:
-            p
-                a(href='http://dl.acm.org/citation.cfm?id=2886418') http://dl.acm.org/citation.cfm?id=2886418
-            p
-                a(href='http://dl.acm.org/citation.cfm?id=2445390') http://dl.acm.org/citation.cfm?id=2445390
+            ul
+                li
+                    a(href='http://dl.acm.org/citation.cfm?id=2886418') EarSketch: A STEAM-Based Approach for Underrepresented Populations in High School Computer Science Education
+                li
+                    a(href='http://dl.acm.org/citation.cfm?id=2445390') Tackling engagement in computing with computational music remixing
+        div.column.large-3.large-pull-9.text-center
+            img(alt='', src='/images/earsketch.png', style='border: 3px solid #000')
     div.row
         div.column.large-9
-            h2 Assist
+            h4 Assist
             h3 UX/UI Designer, Researcher
             p A project aimed at doing good in the community, Assist is a micro-volunteerism platform that allows anyone to get assistance at any time, in any place. Assist began as a project aimed to help people with visual impairments navigate unfamiliar spaces. Through surveys, interviews, and observations, we found that we weren’t solving the right problem. Instead of helping users navigate new spaces, we simply needed to help them get help quickly. I worked on a team of 4 through the research, ideation, design, prototyping, testing, and iterations phases of this project. My main role was to help my teammates synthesize qualitative user data, and to design the UI and UX for the Assist application.
-            p Full UX:
-                a(href='https://drive.google.com/open?id=0B4KtI-bNMgeoaDdzRnVLT2wyRDA')  https://drive.google.com/open?id=0B4KtI-bNMgeoaDdzRnVLT2wyRDA
-        div.column.large-3
-            img(alt='', src='https://placekitten.com/400/400')
-    div.row
-        div.column.large-3
-            img(alt='', src='https://placekitten.com/400/400')
-        div.column.large-9
-            h2 Fitbit Data Visualization
-            h3 Designer, Engineer
-            p I love data. We live in a world of increasing personal data, and I find it to be a fun challenge to figure out how to understand it all. For a personal project, I downloaded all of my own Fitbit data, and turned it into a visualization to understand patterns of activity across seasons. I used Java scripting to analyze all of the data, and to create accurate charts. I then used Adobe Illustrator to get the look I wanted.
             p
-                a(href='https://drive.google.com/open?id=0B4KtI-bNMgeoeU1DcUN4bk4yZUU')  https://drive.google.com/open?id=0B4KtI-bNMgeoeU1DcUN4bk4yZUU
+                a(href='/assist.pdf') Full design
+        div.column.large-3.text-center
+            img(alt='', src='/images/assist.png', style='width: 65%;')
+    div.row.column
+        h4 Fitbit Data Visualization
+        h3 Designer, Engineer
+        p I love data. We live in a world of increasing personal data, and I find it to be a fun challenge to figure out how to understand it all. For a personal project, I downloaded all of my own Fitbit data, and turned it into a visualization to understand patterns of activity across seasons. I used Java scripting to analyze all of the data, and to create accurate charts. I then used Adobe Illustrator to get the look I wanted.
+    div.row
+        div.column.large-8.large-centered
+            a(href='/images/fitbit.jpg')
+                img(alt='', src='/images/fitbit.jpg')
   div.background-image
-  div.background-image-2

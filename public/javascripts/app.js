@@ -19,12 +19,6 @@ function runScroll() {
     } else {
        document.body.classList.remove('nav-scrolled');
     }
-
-    if (window.scrollY < 700) {
-        document.body.classList.remove('scrolled-2')
-    } else if (window.scrollY > 700) {
-        document.body.classList.add('scrolled-2')
-    }
 }
 
 function debounce(func, wait, immediate) {
