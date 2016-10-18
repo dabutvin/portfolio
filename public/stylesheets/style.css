@@ -13,7 +13,8 @@ p {
 }
 h1,
 h2,
-h3 {
+h3,
+h4 {
   text-transform: uppercase;
 }
 h1 {
@@ -187,7 +188,7 @@ nav img:first-child {
   padding: 100px 0;
 }
 .section-projects h3 {
-  margin-top: -20px;
+  margin-top: -10px;
 }
 .card h3 {
   background-size: cover;
